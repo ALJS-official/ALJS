@@ -1,0 +1,106 @@
+{
+  "teams": [
+    {
+      "team_id": "TeamA",
+      "rank": 1,
+      "total_score": 80,
+      "total_kills": 32,
+      "rank_score": 48,
+      "match1_score": 20,
+      "match1_kills": 8,
+      "match1_rank": 12,
+      "match2_score": 18,
+      "match2_kills": 7,
+      "match2_rank": 11,
+      "match3_score": 22,
+      "match3_kills": 10,
+      "match3_rank": 13,
+      "match4_score": 20,
+      "match4_kills": 7,
+      "match4_rank": 12,
+      "players": [
+        {
+          "player_id": "PlayerA1",
+          "kills": "10",
+          "damage": "3200",
+          "assists": "5",
+          "knockdowns": "12",
+          "revives": "1",
+          "respawns": "0",
+          "avg_survival": "18:30"
+        },
+        {
+          "player_id": "PlayerA2",
+          "kills": "12",
+          "damage": "3500",
+          "assists": "7",
+          "knockdowns": "14",
+          "revives": "2",
+          "respawns": "1",
+          "avg_survival": "19:10"
+        },
+        {
+          "player_id": "PlayerA3",
+          "kills": "10",
+          "damage": "2800",
+          "assists": "6",
+          "knockdowns": "11",
+          "revives": "0",
+          "respawns": "0",
+          "avg_survival": "17:50"
+        }
+      ]
+    },
+    {
+      "team_id": "TeamB",
+      "rank": 2,
+      "total_score": 65,
+      "total_kills": 25,
+      "rank_score": 40,
+      "match1_score": 15,
+      "match1_kills": 6,
+      "match1_rank": 9,
+      "match2_score": 16,
+      "match2_kills": 5,
+      "match2_rank": 10,
+      "match3_score": 18,
+      "match3_kills": 7,
+      "match3_rank": 11,
+      "match4_score": 16,
+      "match4_kills": 7,
+      "match4_rank": 10,
+      "players": [
+        {
+          "player_id": "PlayerB1",
+          "kills": "9",
+          "damage": "3000",
+          "assists": "4",
+          "knockdowns": "10",
+          "revives": "1",
+          "respawns": "0",
+          "avg_survival": "16:40"
+        },
+        {
+          "player_id": "PlayerB2",
+          "kills": "8",
+          "damage": "2700",
+          "assists": "5",
+          "knockdowns": "9",
+          "revives": "0",
+          "respawns": "0",
+          "avg_survival": "15:20"
+        },
+        {
+          "player_id": "PlayerB3",
+          "kills": "8",
+          "damage": "2600",
+          "assists": "6",
+          "knockdowns": "8",
+          "revives": "0",
+          "respawns": "0",
+          "avg_survival": "15:55"
+        }
+      ]
+    }
+  ]
+}

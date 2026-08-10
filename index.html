@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>果汁百科 - ALJS 赛事信息</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="static/images/logo3.png" type="image/png" sizes="64x64">
+    <link rel="apple-touch-icon" href="static/images/logo3.png" sizes="180x180">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #161616;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 400px; /* Space for intro and QR codes */
+            transition: padding-top 0.3s ease; /* 平滑调整 */
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background-color: rgba(107, 70, 193, 0.5);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* 视频背景区域 */
+        .video-bg {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin-top: 100px; /* Small gap between navbar and video */
+            transition: margin-top 0.3s ease; /* 平滑调整 */
+        }
+        .video-bg video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+        .hero-content {
+            position: fixed;
+            top: 30vh;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            z-index: 2;
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .hero-content.shifted {
+            opacity: 0;
+            transform: translateY(-100px); /* Slide up effect */
+        }
+        .hero-content h1 { font-size: 3rem; font-weight: bold; }
+        .hero-content p { font-size: 1.2rem; }
+
+        /* 静音按钮样式 */
+        /* 更加醒目的静音按钮及容器 */
+        .mute-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1001; /* 确保在最上层 */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* 提示文字气泡 */
+        .mute-hint {
+            background: rgba(107, 70, 193, 0.5);
+            color: white;
+            padding: 6px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: lighter;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            animation: fadeInRight 0.5s ease forwards;
+        }
+
+        .mute-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            color: #fff;
+            font-size: 1.2rem;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        /* 核心：吸引注意力的波纹动画 */
+        .mute-btn::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid rgba(160, 100, 255, 0.8);
+            animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+
+        .mute-btn:hover {
+            background: rgba(107, 70, 193, 0.6);
+            transform: scale(1.1);
+        }
+
+        .mute-btn img {
+            /* 防止图片被拖动或选中 */
+            pointer-events: none;
+            user-select: none;
+            /* 保持颜色滤镜（可选）：如果你的图片是黑色的想变白色，可以加 filter: invert(1); */
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); opacity: 0.5; }
+            80%, 100% { transform: scale(1.8); opacity: 0; }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+
+        /* 内容区 */
+        .container p {color: #ffffff;}
+        .container h2 {color: #ffffff;}
+        .brand-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .brand-container .navbar-brand:first-child {
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .brand-container .navbar-brand:last-child {
+            font-size: 1rem;
+            color: #BBB;
+            margin-top: -5px;
+        }
+
+        /* 介绍部分 */
+        .intro-section {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(22, 22, 22, 0.9);
+            padding: 20px 0;
+            z-index: 900;
+            backdrop-filter: blur(5px);
+            transition: bottom 0.3s ease;
+        }
+
+        .intro-section.shifted {
+            bottom: 200px; /* Move up when QR section appears */
+        }
+
+        .intro-section a {
+            text-decoration: none; /* 去除下划线 */
+            
+        }
+
+        /* QR code section */
+        .qr-section {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #1c1c1c;
+            padding: 20px 0;
+            z-index: 800;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .qr-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .qr-item {
+            text-align: center;
+        }
+
+        .qr-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            background: transparent;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .qr-item img.logo {
+            width: 150px;
+            height: 150px;
+        }
+
+        .qr-item p {
+            color: #fff;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        @keyframes glowBreath {
+            0% {
+                /* 动画开始：较小的光晕，紫色 */
+                text-shadow: 0 0 10px rgba(160, 100, 255, 0.7);
+            }
+            50% {
+                /* 动画中间：光晕变大、变亮，略微偏向金色/白色 */
+                text-shadow: 0 0 25px rgba(200, 160, 255, 0.5), 0 0 10px rgba(200, 100, 255, 1);
+            }
+            100% {
+                /* 动画结束：回到初始状态 */
+                text-shadow: 0 0 10px rgba(160, 100, 255, 0.7);
+            }
+        }
+        .championship-text {
+            font-family: "Microsoft YaHei", "Heiti SC", sans-serif;
+            font-weight: normal;
+            font-size: 1.5em;
+            text-align: left;
+            margin-bottom: 60px;
+
+            /* 文字颜色：稍微调亮一点的淡紫色，方便看清 */
+            color: #f0ebff;
+
+            /* 应用动画：名称 持续时间(3秒) 速度曲线(平滑) 循环次数(无限) */
+            animation: glowBreath 5s ease-in-out infinite;
+        }
+
+        @font-face {
+            font-family: 'Duke-Fill';
+            font-style: normal;
+            font-weight: bold;
+            src: url('static/fonts/Duke Fill.ttf') format('truetype');
+        }
+
+        .championship-text-eng {
+            font-family: 'Duke-Fill', sans-serif;
+            font-weight: bold;
+            font-size: 4rem;
+            text-align: left;
+            margin-top: 20px;
+
+            /* 文字颜色：同上 */
+            color: #f0ebff;
+
+            /* 应用动画：英文也加上同样的动态光晕 */
+            animation: glowBreath 5s ease-in-out infinite;
+        }
+
+        /* 媒体查询：针对竖屏/小屏幕优化 navbar 展开时的推移 */
+        @media (max-width: 991px) { /* Bootstrap lg 断点前，navbar 折叠 */
+            body.navbar-expanded {
+                padding-top: 5px; /* 展开时 navbar 高度估算（56px collapsed + 菜单高度），可根据实际调整 */
+            }
+            .video-bg.navbar-expanded {
+                margin-top: 140px; /* 100px 原 gap + 额外 256px 推移 */
+            }
+            /* 确保 fixed 元素如 hero-content 在展开时不被 navbar 菜单覆盖 */
+            .hero-content {
+                z-index: 1001; /* 高于 navbar 的 1000 */
+            }
+            .mute-container { top: 10px; right: 10px; }
+            .mute-btn { width: 40px; height: 40px; }
+            .mute-hint { font-size: 0.7rem; }
+        }
+    </style>
+    <!-- 您的其他<head>内容 -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.8, user-scalable=no">
+    <meta name="generator" content="ALJS static GitHub Pages build">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="static/images/logo.png" alt="ALJS Logo" height="80" class="me-2">
+            <div class="brand-container">
+                <a class="navbar-brand" href="./">果汁百科</a>
+                <a class="navbar-brand" href="./">Juicypedia</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="events/">赛事记录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 视频背景部分 -->
+    <div class="video-bg">
+        <video id="bgVideo" autoplay muted loop playsinline>
+            <source src="static/videos/bg1080_remix.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 视频。
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content" id="heroContent">
+            <h1>欢迎来到果汁百科</h1>
+            <p>ALJS赛事信息平台，记录每场精彩瞬间。</p>
+        </div>
+        <!-- 静音按钮 -->
+        <div class="mute-container">
+            <div class="mute-hint" id="muteHint">点击开启声音</div>
+            <button id="muteBtn" class="mute-btn">
+                <img id="muteIcon" src="static/images/mute.png" alt="静音状态" style="width: 60%; height: 60%; object-fit: contain;">
+            </button>
+        </div>
+    </div>
+
+    <!-- 介绍部分 -->
+    <div class="intro-section" id="introSection">
+        <div class="container">
+            <a href="match/s15/">
+                <h1 class="championship-text-eng">DOG is the CHAMPION of ALJS season 15 !</h1>
+            </a>
+            <a href="match/s15/">
+                <h1 class="championship-text">恭喜DOG获得第十五届ALJS冠军 ！</h1>
+            </a>
+            <h2>关于ALJS</h2>
+            <p>前面的忘了，ALJS是一个激动人心的电竞赛事，后面的忘了。</p>
+        </div>
+    </div>
+
+    <!-- QR code section -->
+    <div class="qr-section" id="qrSection">
+        <div class="container">
+            <div class="qr-container">
+                <div class="qr-item">
+                    <img src="static/images/qr1.png" alt="QR Code 1">
+                    <p>QQ群</p>
+                </div>
+                <div class="qr-item">
+                    <img src="static/images/logo.png" alt="logo" class="logo">
+                </div>
+                <div class="qr-item">
+                    <img src="static/images/qr3.png" alt="QR Code 3">
+                    <p>关注popoki谢谢喵</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const muteBtn = document.getElementById("muteBtn");
+        const muteIcon = document.getElementById("muteIcon"); // 现在的 img 标签
+        const muteHint = document.getElementById("muteHint");
+        const video = document.getElementById("bgVideo");
+
+        const qrSection = document.getElementById("qrSection");
+        const introSection = document.getElementById("introSection");
+        const heroContent = document.getElementById("heroContent");
+        const navbarCollapse = document.getElementById('navbarNav'); // navbar collapse 元素
+        const body = document.body;
+        const videoBg = document.querySelector('.video-bg');
+
+
+        // Mute button functionality
+        muteBtn.addEventListener("click", () => {
+            if (video.muted) {
+                // 切换到有声状态
+                video.muted = false;
+                video.play();
+                muteIcon.src = "static/images/unmute.png"; // 换成有声图标
+                muteHint.style.display = "none"; // 开启后隐藏提示
+            } else {
+                // 切换到静音状态
+                video.muted = true;
+                muteIcon.src = "static/images/mute.png";   // 换成静音图标
+                muteHint.style.display = "block";
+                muteHint.textContent = "已静音";
+            }
+        });
+
+        // QR code section visibility, intro section, and hero content shift on scroll
+        window.addEventListener("scroll", () => {
+            const scrollPosition = window.innerHeight + window.scrollY;
+            const documentHeight = document.documentElement.scrollHeight;
+            const triggerPoint = documentHeight - 100; // Trigger 100px before bottom
+
+            if (scrollPosition >= triggerPoint) {
+                qrSection.classList.add("visible");
+                introSection.classList.add("shifted");
+                heroContent.classList.add("shifted");
+            } else {
+                qrSection.classList.remove("visible");
+                introSection.classList.remove("shifted");
+                heroContent.classList.remove("shifted");
+            }
+        });
+
+        // 新增：监听 navbar collapse 事件，动态调整视频位置（针对竖屏）
+        const collapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+        navbarCollapse.addEventListener('show.bs.collapse', function () {
+            // 展开时推移
+            body.classList.add('navbar-expanded');
+            videoBg.classList.add('navbar-expanded');
+        });
+        navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+            // 折叠时恢复
+            body.classList.remove('navbar-expanded');
+            videoBg.classList.remove('navbar-expanded');
+        });
+    </script>
+</body>
+</html>

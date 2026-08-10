@@ -1,0 +1,551 @@
+{
+  "num_matches": 4,
+  "teams": [
+    {
+      "team_id": "TWERKAHOLICS",
+      "total": {
+        "points": 75,
+        "placement": 1,
+        "kills": 35
+      },
+      "matches": {
+        "match1": {
+          "points": 20,
+          "placement": 2,
+          "kills": 10
+        },
+        "match2": {
+          "points": 25,
+          "placement": 1,
+          "kills": 12
+        },
+        "match3": {
+          "points": 15,
+          "placement": 3,
+          "kills": 8
+        },
+        "match4": {
+          "points": 15,
+          "placement": 4,
+          "kills": 5
+        }
+      },
+      "players": [
+        {
+          "player_id": "PlayerA",
+          "total": {
+            "kills": 15,
+            "damage": 4500,
+            "assists": 10,
+            "knockdowns": 12,
+            "revives": 3,
+            "respawns": 2,
+            "avg_survival": "15:30"
+          },
+          "matches": {
+            "match1": {
+              "kills": 4,
+              "damage": 1200,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "14:00"
+            },
+            "match2": {
+              "kills": 5,
+              "damage": 1500,
+              "assists": 3,
+              "knockdowns": 4,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "16:00"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 1000,
+              "assists": 3,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "15:00"
+            },
+            "match4": {
+              "kills": 3,
+              "damage": 800,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "17:00"
+            }
+          }
+        },
+        {
+          "player_id": "PlayerB",
+          "total": {
+            "kills": 10,
+            "damage": 3000,
+            "assists": 8,
+            "knockdowns": 10,
+            "revives": 2,
+            "respawns": 1,
+            "avg_survival": "15:00"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 800,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14:00"
+            },
+            "match2": {
+              "kills": 4,
+              "damage": 1000,
+              "assists": 3,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "16:00"
+            },
+            "match3": {
+              "kills": 2,
+              "damage": 600,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "15:00"
+            },
+            "match4": {
+              "kills": 1,
+              "damage": 600,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "15:00"
+            }
+          }
+        },
+        {
+          "player_id": "PlayerC",
+          "total": {
+            "kills": 10,
+            "damage": 3200,
+            "assists": 7,
+            "knockdowns": 9,
+            "revives": 4,
+            "respawns": 3,
+            "avg_survival": "16:00"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 800,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "14:30"
+            },
+            "match2": {
+              "kills": 3,
+              "damage": 900,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "16:30"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 800,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15:30"
+            },
+            "match4": {
+              "kills": 1,
+              "damage": 700,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "17:00"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "FREAKAZOIDS",
+      "total": {
+        "points": 59,
+        "placement": 2,
+        "kills": 40
+      },
+      "matches": {
+        "match1": {
+          "points": 18,
+          "placement": 3,
+          "kills": 12
+        },
+        "match2": {
+          "points": 15,
+          "placement": 4,
+          "kills": 10
+        },
+        "match3": {
+          "points": 12,
+          "placement": 5,
+          "kills": 8
+        },
+        "match4": {
+          "points": 14,
+          "placement": 2,
+          "kills": 10
+        }
+      },
+      "players": [
+        {
+          "player_id": "PlayerD",
+          "total": {
+            "kills": 18,
+            "damage": 4800,
+            "assists": 9,
+            "knockdowns": 11,
+            "revives": 4,
+            "respawns": 3,
+            "avg_survival": "14:45"
+          },
+          "matches": {
+            "match1": {
+              "kills": 5,
+              "damage": 1300,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "13:30"
+            },
+            "match2": {
+              "kills": 4,
+              "damage": 1200,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "14:00"
+            },
+            "match3": {
+              "kills": 4,
+              "damage": 1100,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "15:00"
+            },
+            "match4": {
+              "kills": 5,
+              "damage": 1200,
+              "assists": 3,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "16:00"
+            }
+          }
+        },
+        {
+          "player_id": "PlayerE",
+          "total": {
+            "kills": 12,
+            "damage": 3500,
+            "assists": 6,
+            "knockdowns": 8,
+            "revives": 3,
+            "respawns": 2,
+            "avg_survival": "15:15"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 900,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "14:00"
+            },
+            "match2": {
+              "kills": 3,
+              "damage": 800,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15:00"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 900,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "15:30"
+            },
+            "match4": {
+              "kills": 3,
+              "damage": 900,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15:45"
+            }
+          }
+        },
+        {
+          "player_id": "PlayerF",
+          "total": {
+            "kills": 10,
+            "damage": 3100,
+            "assists": 7,
+            "knockdowns": 9,
+            "revives": 2,
+            "respawns": 1,
+            "avg_survival": "15:30"
+          },
+          "matches": {
+            "match1": {
+              "kills": 4,
+              "damage": 1100,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "14:00"
+            },
+            "match2": {
+              "kills": 3,
+              "damage": 800,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15:00"
+            },
+            "match3": {
+              "kills": 1,
+              "damage": 500,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "15:00"
+            },
+            "match4": {
+              "kills": 2,
+              "damage": 700,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "16:30"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "EXILE",
+      "total": {
+        "points": 51,
+        "placement": 1,
+        "kills": 27
+      },
+      "matches": {
+        "match1": {
+          "points": 15,
+          "placement": 4,
+          "kills": 8
+        },
+        "match2": {
+          "points": 12,
+          "placement": 5,
+          "kills": 6
+        },
+        "match3": {
+          "points": 14,
+          "placement": 2,
+          "kills": 7
+        },
+        "match4": {
+          "points": 10,
+          "placement": 3,
+          "kills": 6
+        }
+      },
+      "players": [
+        {
+          "player_id": "PlayerG",
+          "total": {
+            "kills": 12,
+            "damage": 4000,
+            "assists": 8,
+            "knockdowns": 10,
+            "revives": 3,
+            "respawns": 2,
+            "avg_survival": "15:00"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 1000,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "14:30"
+            },
+            "match2": {
+              "kills": 2,
+              "damage": 800,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15:00"
+            },
+            "match3": {
+              "kills": 4,
+              "damage": 1200,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "15:30"
+            },
+            "match4": {
+              "kills": 3,
+              "damage": 1000,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14:30"
+            }
+          }
+        },
+        {
+          "player_id": "PlayerH",
+          "total": {
+            "kills": 9,
+            "damage": 3200,
+            "assists": 6,
+            "knockdowns": 8,
+            "revives": 2,
+            "respawns": 1,
+            "avg_survival": "15:15"
+          },
+          "matches": {
+            "match1": {
+              "kills": 2,
+              "damage": 800,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "14:00"
+            },
+            "match2": {
+              "kills": 2,
+              "damage": 700,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15:00"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 900,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "15:30"
+            },
+            "match4": {
+              "kills": 2,
+              "damage": 800,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15:00"
+            }
+          }
+        },
+        {
+          "player_id": "PlayerI",
+          "total": {
+            "kills": 6,
+            "damage": 2800,
+            "assists": 5,
+            "knockdowns": 7,
+            "revives": 3,
+            "respawns": 2,
+            "avg_survival": "14:45"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 900,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "14:00"
+            },
+            "match2": {
+              "kills": 2,
+              "damage": 600,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "15:00"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 500,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "15:00"
+            },
+            "match4": {
+              "kills": 1,
+              "damage": 800,
+              "assists": 2,
+              "knockdowns": 1,
+              "revives": 1,
+              "respawns": 1,
+              "avg_survival": "15:00"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

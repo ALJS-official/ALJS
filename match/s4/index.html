@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <base href="../../">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=720, initial-scale=0.5, minimum-scale=0.3, maximum-scale=1.7">
+  <title>ALJS 比赛详情 - 果汁百科</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="static/images/logo3.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="static/images/logo3.png" sizes="180x180">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      margin: 0 auto;
+    }
+    .container {
+      min-width: 720px; /* Enforce minimum width for main content */
+      max-width: 70vw; /* Cap maximum width */
+    }
+    .navbar {
+      background-color: rgba(107, 70, 193, 0.5);
+      backdrop-filter: blur(10px);
+      color: #fff;
+    }
+    .navbar-toggler {
+      z-index: 1000;
+      border: none;
+    }
+    .season-tabs {
+      background-color: #111;
+      padding: 0px 0;
+      border-bottom: 2px solid #222;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #333 #222;
+      box-shadow: 0 4px 12px  rgba(107, 70, 193, 0.2); /* 添加紫色阴影，匹配主题 */
+    }
+    .season-tabs::-webkit-scrollbar {
+      height: 8px;
+    }
+    .season-tabs::-webkit-scrollbar-track {
+      background: #222;
+    }
+    .season-tabs::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
+    .season-tabs .d-flex {
+      transition: transform 0.3s ease-in-out;
+    }
+    .season-tab {
+      background-color: #1c1c1c;
+      color: #aaa;
+      padding: 12px 40px;
+      margin-right: 10px;
+      margin-top: 10px;
+      border-radius: 0;
+      flex: 0 0 auto;
+      text-transform: uppercase;
+      border: none;
+      white-space: nowrap;
+      min-width: 120px;
+      font-family: 'Eurostile LT', sans-serif;
+      font-weight: normal;
+    }
+    .season-tab:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .season-tab.active {
+      background-color: #533794;
+      color: #fff;
+      box-shadow: 0 0px 12px  rgba(107, 70, 193, 0.5); /* 添加紫色阴影，匹配主题 */
+    }
+    .match-tabs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 20px 0;
+      /*min-width: 720px; !* Ensure tabs don't shrink too much *!*/
+    }
+    .match-tab {
+      background-color: #1c1c1c;
+      color: #aaa;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 0;
+      text-transform: uppercase;
+      text-align: center;
+      box-sizing: border-box;
+      min-width: 150px;
+      font-family: 'Eurostile LT', sans-serif;
+      font-weight: normal;
+    }
+    .match-tab:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .match-tab.active {
+      background-color: #533794;
+      color: #fff;
+      box-shadow: 0 0px 20px  rgba(107, 70, 193, 0.5); /* 添加紫色阴影，匹配主题 */
+    }
+    .team-card {
+      background: #161616;
+      border: 1px solid #333;
+      border-radius: 0;
+      margin-bottom: 8px;
+      padding: 12px 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .team-card:hover {
+      background: #1f1f1f;
+    }
+    .team-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .team-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: visible;
+    }
+    .team-logo {
+      width: 36px;
+      height: 36px;
+      background: #222;
+      border: 2px solid #444;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-style: inherit;
+      font-size: 1.3rem;
+      color: #fff;
+      font-family: 'Duke-Fill', sans-serif;
+      font-weight: bolder;
+    }
+    .team-name {
+      font-family: 'Duke-Fill', sans-serif;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      margin-left: 10px;
+      align-items: baseline;
+      gap: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: visible;
+    }
+    .team-name .english {
+      margin-left: 0.3rem;
+      margin-right: 0.3rem;
+      font-size: 2rem;
+      transform: scaleX(1.2);
+      display: inline-block;
+    }
+    .team-name .chinese {
+      font-size: 1.3rem;
+    }
+    .team-stats {
+      display: flex;
+      gap: 20px;
+      font-size: 1.1rem;
+      align-items: center;
+    }
+    .team-stats .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .team-stats .stat-icon {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+    .team-stats .stat-text {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      font-weight: bold;
+      color: #ccc;
+    }
+    .team-stats .stat-text small {
+      font-size: 0.8rem;
+      color: #888;
+    }
+    .player-table-wrapper {
+      margin-top: 0px;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .player-table-wrapper.show {
+      max-height: 1000px;
+      opacity: 1;
+    }
+    .player-table-container {
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #333 #222;
+    }
+    .player-table-container::-webkit-scrollbar {
+      height: 8px;
+    }
+    .player-table-container::-webkit-scrollbar-track {
+      background: #222;
+    }
+    .player-table-container::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
+    .player-table {
+      width: 100%;
+      min-width: 800px;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: #111;
+    }
+    .player-table th, .player-table td {
+      padding: 8px;
+      border-bottom: 1px solid #333;
+      text-align: center;
+      color: #ccc;
+      white-space: nowrap;
+    }
+    .player-table th {
+      background: #222;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .brand-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .brand-container .navbar-brand:first-child {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1.2;
+      font-family: 'Eurostile LT', sans-serif;
+    }
+    .brand-container .navbar-brand:last-child {
+      font-size: 1rem;
+      color: #BBB;
+      margin-top: -5px;
+      font-family: 'Eurostile LT', sans-serif;
+    }
+    @font-face {
+      font-family: 'Duke-Fill';
+      font-style: normal;
+      font-weight: bold;
+      src: url('static/fonts/Duke Fill.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Eurostile LT';
+      font-style: normal;
+      font-weight: bold;
+      src: url('static/fonts/EurostileLTProUnicode-Bold.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'Eurostile LT';
+      font-style: normal;
+      font-weight: normal;
+      src: url('static/fonts/EurostileLTProUnicode.otf') format('opentype');
+    }
+    h1.mb-3 {
+      font-family: 'Duke-Fill', sans-serif;
+      font-weight: bold;
+      font-size: 4rem;
+    }
+    .nav-item .nav-link {
+      font-family: 'Eurostile LT', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <img src="static/images/logo.png" alt="ALJS Logo" height="80" class="me-2">
+      <div class="brand-container">
+        <a class="navbar-brand" href="./">果汁百科</a>
+        <a class="navbar-brand" href="./">Juicypedia</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="events/">赛事记录</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-4">
+    <div class="season-tabs">
+      <div class="d-flex flex-nowrap mb-3" id="season-tabs-scroll">
+        <!-- Generated by static JS from the current /match/sN/ path. -->
+</div>
+    </div>
+    <br>
+    <h1 class="mb-3" id="season-title">ALJS TOURNAMENT</h1>
+    <div class="match-tabs" id="match-tabs-container">
+      <button class="match-tab active" data-tab="total">Group Standings</button>
+    </div>
+    <div id="teams-container"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (() => {
+      const container = document.getElementById('teams-container');
+      const tabContainer = document.getElementById('match-tabs-container');
+      const seasonTabs = document.getElementById('season-tabs-scroll');
+      const title = document.getElementById('season-title');
+      const seasonMatch = window.location.pathname.match(/\/match\/s(\d+)\/?$/i);
+      const seasonNum = seasonMatch ? Number(seasonMatch[1]) : 15;
+      const maxSeason = 15;
+      const seasonId = `s${seasonNum}`;
+      let data = null;
+
+      const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+
+      function renderSeasonTabs() {
+        seasonTabs.innerHTML = Array.from({length: maxSeason}, (_, i) => i + 1).map(s =>
+          `<a href="match/s${s}/" class="season-tab btn ${s === seasonNum ? 'active' : ''}">Season ${s}</a>`
+        ).join('');
+        requestAnimationFrame(() => {
+          const active = seasonTabs.querySelector('.season-tab.active');
+          if (active) active.scrollIntoView({behavior: 'auto', block: 'nearest', inline: 'center'});
+        });
+      }
+
+      function formatTeamName(teamId) {
+        let html = '', buffer = '', lastType = null;
+        for (const char of String(teamId ?? '')) {
+          const type = /[A-Za-z0-9]/.test(char) ? 'english' : 'chinese';
+          if (lastType && type !== lastType) {
+            html += `<span class="${lastType}">${escapeHtml(buffer)}</span>`;
+            buffer = '';
+          }
+          buffer += char;
+          lastType = type;
+        }
+        if (buffer) html += `<span class="${lastType}">${escapeHtml(buffer)}</span>`;
+        return html;
+      }
+
+      function metricFor(team, tab) {
+        return tab === 'total' ? (team.total || {}) : (team.matches?.[tab] || {});
+      }
+
+      function renderTeams(tab) {
+        if (!data?.teams?.length) {
+          container.innerHTML = '<div class="alert alert-dark border-secondary text-light">该赛季暂无比赛数据。</div>';
+          return;
+        }
+        const sortedTeams = [...data.teams].sort((a, b) => {
+          const aData = metricFor(a, tab), bData = metricFor(b, tab);
+          return (Number(bData.points) || 0) - (Number(aData.points) || 0)
+            || (Number(bData.kills) || 0) - (Number(aData.kills) || 0)
+            || (Number(aData.placement) || 999) - (Number(bData.placement) || 999);
+        });
+
+        container.innerHTML = sortedTeams.map((team, index) => {
+          const teamData = metricFor(team, tab);
+          const matchPlacements = Object.values(team.matches || {}).map(m => Number(m.placement)).filter(Number.isFinite);
+          const placementLabel = tab === 'total' ? 'Best Placement' : 'Placement';
+          const placementValue = tab === 'total'
+            ? (matchPlacements.length ? Math.min(...matchPlacements) : (teamData.placement ?? '/'))
+            : (teamData.placement ?? '/');
+          const players = Array.isArray(team.players) ? team.players : [];
+          return `
+            <div class="team-card">
+              <div class="team-header" role="button" tabindex="0" aria-expanded="false">
+                <div class="team-info">
+                  <div class="team-logo">#${index + 1}</div>
+                  <div class="team-name">${formatTeamName(team.team_id)}</div>
+                </div>
+                <div class="team-stats">
+                  <div class="stat-item">
+                    <img src="static/images/points.png" alt="Points Icon" class="stat-icon">
+                    <div class="stat-text"><span>${escapeHtml(teamData.points ?? 0)}</span><small>Points</small></div>
+                  </div>
+                  <div class="stat-item">
+                    <img src="static/images/placements.png" alt="Placement Icon" class="stat-icon">
+                    <div class="stat-text"><span>${escapeHtml(placementValue)}</span><small>${placementLabel}</small></div>
+                  </div>
+                  <div class="stat-item">
+                    <img src="static/images/kills.png" alt="Kills Icon" class="stat-icon">
+                    <div class="stat-text"><span>${escapeHtml(teamData.kills ?? 0)}</span><small>Kills</small></div>
+                  </div>
+                </div>
+              </div>
+              <div class="player-table-wrapper">
+                <div class="player-table-container">
+                  <table class="player-table">
+                    <thead><tr><th>Player</th><th>Kills</th><th>Damage</th><th>Assists</th><th>Knockdowns</th><th>Revives</th><th>Respawns</th><th>Avg Survival</th></tr></thead>
+                    <tbody>${players.map(p => {
+                      const pData = tab === 'total' ? (p.total || {}) : (p.matches?.[tab] || {});
+                      return `<tr>
+                        <td>${escapeHtml(p.player_id)}</td>
+                        <td>${escapeHtml(pData.kills ?? 0)}</td>
+                        <td>${escapeHtml(pData.damage ?? 0)}</td>
+                        <td>${escapeHtml(pData.assists ?? 0)}</td>
+                        <td>${escapeHtml(pData.knockdowns ?? 0)}</td>
+                        <td>${escapeHtml(pData.revives ?? 0)}</td>
+                        <td>${escapeHtml(pData.respawns ?? 0)}</td>
+                        <td>${escapeHtml(pData.avg_survival ?? '0:00')}</td>
+                      </tr>`;
+                    }).join('')}</tbody>
+                  </table>
+                </div>
+              </div>
+            </div>`;
+        }).join('');
+
+        container.querySelectorAll('.team-card').forEach(card => {
+          const header = card.querySelector('.team-header');
+          const wrapper = card.querySelector('.player-table-wrapper');
+          const toggle = () => {
+            wrapper.classList.toggle('show');
+            header.setAttribute('aria-expanded', wrapper.classList.contains('show') ? 'true' : 'false');
+          };
+          header.addEventListener('click', toggle);
+          header.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }});
+        });
+      }
+
+      function normalizeMatchData(raw) {
+        if (raw?.num_matches && Array.isArray(raw.teams) && raw.teams.every(t => t.total && t.matches)) return raw;
+        const teams = Array.isArray(raw?.teams) ? raw.teams : [];
+        const matchNumbers = new Set();
+        teams.forEach(team => Object.keys(team).forEach(key => {
+          const found = key.match(/^match(\d+)_score$/);
+          if (found) matchNumbers.add(Number(found[1]));
+        }));
+        const nums = [...matchNumbers].sort((a,b) => a-b);
+        return {
+          num_matches: nums.length ? Math.max(...nums) : 0,
+          teams: teams.map(team => ({
+            team_id: team.team_id,
+            total: {
+              points: team.total_score ?? team.points ?? 0,
+              placement: team.rank ?? team.placement ?? 999,
+              kills: team.total_kills ?? team.kills ?? 0
+            },
+            matches: Object.fromEntries(nums.map(m => [`match${m}`, {
+              points: team[`match${m}_score`] ?? 0,
+              placement: team[`match${m}_rank`] ?? 999,
+              kills: team[`match${m}_kills`] ?? 0
+            }])),
+            players: (team.players || []).map(p => ({
+              player_id: p.player_id,
+              total: {
+                kills: p.kills ?? '/', damage: p.damage ?? '/', assists: p.assists ?? '/',
+                knockdowns: p.knockdowns ?? '/', revives: p.revives ?? '/', respawns: p.respawns ?? '/',
+                avg_survival: p.avg_survival ?? '/'
+              },
+              matches: Object.fromEntries(nums.map(m => [`match${m}`, {
+                kills: '/', damage: '/', assists: '/', knockdowns: '/', revives: '/', respawns: '/', avg_survival: '/'
+              }]))
+            }))
+          }))
+        };
+      }
+
+      async function init() {
+        renderSeasonTabs();
+        title.textContent = `ALJS TOURNAMENT - SEASON${seasonNum}`;
+        try {
+          const response = await fetch(`data/match/${seasonId}.json`);
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          data = normalizeMatchData(await response.json());
+          const numMatches = Number(data.num_matches) || 0;
+          for (let m = 1; m <= numMatches; m++) {
+            const button = document.createElement('button');
+            button.className = 'match-tab';
+            button.dataset.tab = `match${m}`;
+            button.textContent = `Match ${m} Complete`;
+            tabContainer.appendChild(button);
+          }
+          tabContainer.addEventListener('click', event => {
+            const button = event.target.closest('.match-tab');
+            if (!button) return;
+            tabContainer.querySelectorAll('.match-tab').forEach(tab => tab.classList.remove('active'));
+            button.classList.add('active');
+            renderTeams(button.dataset.tab);
+          });
+          renderTeams('total');
+        } catch (error) {
+          console.error(error);
+          container.innerHTML = `<div class="alert alert-dark border-secondary text-light">Season ${seasonNum} 暂无可用数据。</div>`;
+        }
+      }
+      init();
+    })();
+  </script>
+</body>
+</html>
