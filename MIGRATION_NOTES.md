@@ -14,3 +14,8 @@ Original server-only files intentionally removed from the deployable site:
 Those Python utilities were not imported by `app.py`; they are offline data-preparation scripts rather than runtime website dependencies. The deployed website uses the generated JSON files in `data/` directly.
 
 The source archive did not contain `data/match/s2.json` through `s7.json`, and `s13.json` uses a legacy schema. The static page includes a browser-side compatibility adapter for S13, and shows a friendly “暂无可用数据” message when a season JSON is missing instead of throwing a JavaScript error.
+
+
+## v2 event routing
+
+All match detail pages now share `match/index.html` and are selected with `?event=<id>`. Categories and event labels are configured in `data/competitions.json`. The fake legacy S13 TeamA/TeamB placeholder data was removed.

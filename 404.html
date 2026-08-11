@@ -1,3 +1,10 @@
 <!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ALJS</title><style>body{font-family:system-ui;background:#161616;color:#fff;padding:3rem}a{color:#b69cff}</style></head><body><h1>页面未找到</h1><p>正在尝试跳转到 ALJS 页面…</p><script>
-const p=location.pathname; const m=p.match(/^(.*\/ALJS\/)(match\/s\d+|events|players|records)$/i); if(m){location.replace(m[1]+m[2]+'/');} else {document.body.insertAdjacentHTML('beforeend','<p><a href="./">返回主页</a></p>');}
+const p=location.pathname;
+const oldMatch=p.match(/^(.*\/)match\/(s\d+)\/?$/i);
+if(oldMatch){location.replace(oldMatch[1]+'match/?event='+encodeURIComponent(oldMatch[2]));}
+else {
+  const known=p.match(/^(.*\/)(events|players|records)\/?$/i);
+  if(known) location.replace(known[1]+known[2]+'/');
+  else document.body.insertAdjacentHTML('beforeend','<p><a href="./">返回主页</a></p>');
+}
 </script></body></html>

@@ -1,0 +1,178 @@
+{
+  "categories": [
+    {
+      "id": "official",
+      "name": "正赛",
+      "englishName": "OFFICIAL TOURNAMENTS",
+      "events": [
+        {
+          "id": "s15",
+          "name": "ALJS 2025 Season 15",
+          "shortName": "Season 15",
+          "title": "ALJS TOURNAMENT - SEASON 15",
+          "dataFile": "data/match/s15.json",
+          "date": "2026-04-04",
+          "winner": "DOG",
+          "description": "第15届ALJS欧洲赛区"
+        },
+        {
+          "id": "s14",
+          "name": "ALJS 2025 Season 14",
+          "shortName": "Season 14",
+          "title": "ALJS TOURNAMENT - SEASON 14",
+          "dataFile": "data/match/s14.json",
+          "date": "2025-08-16",
+          "winner": "KMS",
+          "description": "第14届ALJS欧洲赛区"
+        },
+        {
+          "id": "s13",
+          "name": "ALJS Season 13",
+          "shortName": "Season 13",
+          "title": "ALJS TOURNAMENT - SEASON 13",
+          "dataFile": null,
+          "date": "",
+          "winner": "",
+          "description": ""
+        },
+        {
+          "id": "s12",
+          "name": "ALJS 2025 Season 12",
+          "shortName": "Season 12",
+          "title": "ALJS TOURNAMENT - SEASON 12",
+          "dataFile": "data/match/s12.json",
+          "date": "2025-04-27",
+          "winner": "XHG",
+          "description": "第12届ALJS亚太赛区"
+        },
+        {
+          "id": "s11",
+          "name": "ALJS 2025 Season 11",
+          "shortName": "Season 11",
+          "title": "ALJS TOURNAMENT - SEASON 11",
+          "dataFile": "data/match/s11.json",
+          "date": "2025-04-19",
+          "winner": "MMF",
+          "description": "第11届ALJS亚太赛区"
+        },
+        {
+          "id": "s10",
+          "name": "ALJS 2025 Season 10",
+          "shortName": "Season 10",
+          "title": "ALJS TOURNAMENT - SEASON 10",
+          "dataFile": "data/match/s10.json",
+          "date": "2024-10-05",
+          "winner": "翻斗花园突击手",
+          "description": "第10届ALJS亚太赛区"
+        },
+        {
+          "id": "s9",
+          "name": "ALJS 2025 Season 9",
+          "shortName": "Season 9",
+          "title": "ALJS TOURNAMENT - SEASON 9",
+          "dataFile": "data/match/s9.json",
+          "date": "2024-08-03",
+          "winner": "超级无敌巨王暴龙",
+          "description": "第9届ALJS亚太赛区"
+        },
+        {
+          "id": "s8",
+          "name": "ALJS 2025 Season 8",
+          "shortName": "Season 8",
+          "title": "ALJS TOURNAMENT - SEASON 8",
+          "dataFile": "data/match/s8.json",
+          "date": "2024-04-06",
+          "winner": "跟你们爆了",
+          "description": "第8届ALJS欧洲赛区"
+        },
+        {
+          "id": "s7",
+          "name": "ALJS Season 7",
+          "shortName": "Season 7",
+          "title": "ALJS TOURNAMENT - SEASON 7",
+          "dataFile": null,
+          "date": "",
+          "winner": "",
+          "description": ""
+        },
+        {
+          "id": "s6",
+          "name": "ALJS Season 6",
+          "shortName": "Season 6",
+          "title": "ALJS TOURNAMENT - SEASON 6",
+          "dataFile": null,
+          "date": "",
+          "winner": "",
+          "description": ""
+        },
+        {
+          "id": "s5",
+          "name": "ALJS Season 5",
+          "shortName": "Season 5",
+          "title": "ALJS TOURNAMENT - SEASON 5",
+          "dataFile": null,
+          "date": "",
+          "winner": "",
+          "description": ""
+        },
+        {
+          "id": "s4",
+          "name": "ALJS Season 4",
+          "shortName": "Season 4",
+          "title": "ALJS TOURNAMENT - SEASON 4",
+          "dataFile": null,
+          "date": "",
+          "winner": "",
+          "description": ""
+        },
+        {
+          "id": "s3",
+          "name": "ALJS Season 3",
+          "shortName": "Season 3",
+          "title": "ALJS TOURNAMENT - SEASON 3",
+          "dataFile": null,
+          "date": "",
+          "winner": "",
+          "description": ""
+        },
+        {
+          "id": "s2",
+          "name": "ALJS Season 2",
+          "shortName": "Season 2",
+          "title": "ALJS TOURNAMENT - SEASON 2",
+          "dataFile": null,
+          "date": "",
+          "winner": "",
+          "description": ""
+        },
+        {
+          "id": "s1",
+          "name": "ALJS Season 1",
+          "shortName": "Season 1",
+          "title": "ALJS TOURNAMENT - SEASON 1",
+          "dataFile": "data/match/s1.json",
+          "date": "",
+          "winner": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "fun",
+      "name": "娱乐赛",
+      "englishName": "FUN EVENTS",
+      "events": [
+        {
+          "id": "couple-cup-final",
+          "name": "ALJS 情侣杯决赛",
+          "shortName": "情侣杯",
+          "title": "ALJS COUPLE CUP - GRAND FINAL",
+          "dataFile": "data/match/couple-cup-final.json",
+          "date": "2026-08-09",
+          "winner": "CHA",
+          "description": "ALJS 情侣杯决赛"
+        }
+      ]
+    }
+  ]
+}

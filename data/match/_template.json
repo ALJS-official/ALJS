@@ -1,0 +1,45 @@
+{
+  "num_matches": 1,
+  "teams": [
+    {
+      "team_id": "EXAMPLE_TEAM",
+      "total": {
+        "points": 0,
+        "placement": 1,
+        "kills": 0
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 1,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "ExamplePlayer",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

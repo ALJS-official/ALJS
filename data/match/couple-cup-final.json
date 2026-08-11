@@ -1,0 +1,2645 @@
+{
+  "num_matches": 4,
+  "teams": [
+    {
+      "team_id": "CHA",
+      "total": {
+        "points": 50,
+        "placement": 1,
+        "kills": 23
+      },
+      "matches": {
+        "match1": {
+          "points": 4,
+          "placement": 12,
+          "kills": 3
+        },
+        "match2": {
+          "points": 12,
+          "placement": 3,
+          "kills": 5
+        },
+        "match3": {
+          "points": 22,
+          "placement": 1,
+          "kills": 10
+        },
+        "match4": {
+          "points": 12,
+          "placement": 3,
+          "kills": 5
+        }
+      },
+      "players": [
+        {
+          "player_id": "抖音派大星-大马（彩笔版）",
+          "total": {
+            "kills": 17,
+            "damage": 4427,
+            "assists": 5,
+            "knockdowns": 21,
+            "revives": 2,
+            "respawns": 1,
+            "avg_survival": "13m 47s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 793,
+              "assists": 0,
+              "knockdowns": 4,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 45s"
+            },
+            "match2": {
+              "kills": 4,
+              "damage": 1136,
+              "assists": 1,
+              "knockdowns": 5,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "17m 17s"
+            },
+            "match3": {
+              "kills": 7,
+              "damage": 1936,
+              "assists": 2,
+              "knockdowns": 9,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "19m 49s"
+            },
+            "match4": {
+              "kills": 3,
+              "damage": 562,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "11m 17s"
+            }
+          }
+        },
+        {
+          "player_id": "草莓可丽饼OwO",
+          "total": {
+            "kills": 6,
+            "damage": 3496,
+            "assists": 14,
+            "knockdowns": 7,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "13m 22s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 335,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 07s"
+            },
+            "match2": {
+              "kills": 1,
+              "damage": 620,
+              "assists": 3,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "17m 17s"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 2226,
+              "assists": 7,
+              "knockdowns": 4,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "19m 49s"
+            },
+            "match4": {
+              "kills": 2,
+              "damage": 315,
+              "assists": 3,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "11m 17s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "LLJJ",
+      "total": {
+        "points": 36,
+        "placement": 2,
+        "kills": 21
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 17,
+          "kills": 0
+        },
+        "match2": {
+          "points": 15,
+          "placement": 4,
+          "kills": 10
+        },
+        "match3": {
+          "points": 1,
+          "placement": 12,
+          "kills": 0
+        },
+        "match4": {
+          "points": 20,
+          "placement": 2,
+          "kills": 11
+        }
+      },
+      "players": [
+        {
+          "player_id": "LLJJ_Jinng-v-",
+          "total": {
+            "kills": 14,
+            "damage": 5866,
+            "assists": 6,
+            "knockdowns": 16,
+            "revives": 1,
+            "respawns": 1,
+            "avg_survival": "10m 25s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 273,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "3m 59s"
+            },
+            "match2": {
+              "kills": 4,
+              "damage": 2324,
+              "assists": 5,
+              "knockdowns": 4,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15m 28s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 731,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "7m 56s"
+            },
+            "match4": {
+              "kills": 10,
+              "damage": 2538,
+              "assists": 1,
+              "knockdowns": 10,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 18s"
+            }
+          }
+        },
+        {
+          "player_id": "LLJJ_Lumi",
+          "total": {
+            "kills": 7,
+            "damage": 2181,
+            "assists": 9,
+            "knockdowns": 8,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "10m 24s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 50,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "3m 57s"
+            },
+            "match2": {
+              "kills": 6,
+              "damage": 1243,
+              "assists": 3,
+              "knockdowns": 7,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "15m 28s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 332,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "7m 55s"
+            },
+            "match4": {
+              "kills": 1,
+              "damage": 556,
+              "assists": 6,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 18s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "DFJ",
+      "total": {
+        "points": 36,
+        "placement": 3,
+        "kills": 23
+      },
+      "matches": {
+        "match1": {
+          "points": 10,
+          "placement": 8,
+          "kills": 8
+        },
+        "match2": {
+          "points": 19,
+          "placement": 1,
+          "kills": 10
+        },
+        "match3": {
+          "points": 7,
+          "placement": 9,
+          "kills": 5
+        },
+        "match4": {
+          "points": 0,
+          "placement": 16,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "NewBeeFan",
+          "total": {
+            "kills": 13,
+            "damage": 4157,
+            "assists": 8,
+            "knockdowns": 14,
+            "revives": 4,
+            "respawns": 0,
+            "avg_survival": "11m 35s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 6,
+              "damage": 1384,
+              "assists": 1,
+              "knockdowns": 6,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "12m 02s"
+            },
+            "match2": {
+              "kills": 5,
+              "damage": 2130,
+              "assists": 5,
+              "knockdowns": 6,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "17m 18s"
+            },
+            "match3": {
+              "kills": 2,
+              "damage": 466,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 2,
+              "respawns": 0,
+              "avg_survival": "13m 11s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 177,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "3m 50s"
+            }
+          }
+        },
+        {
+          "player_id": "我讨厌这个世界",
+          "total": {
+            "kills": 10,
+            "damage": 2369,
+            "assists": 8,
+            "knockdowns": 10,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "11m 41s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 2,
+              "damage": 839,
+              "assists": 3,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "12m 23s"
+            },
+            "match2": {
+              "kills": 5,
+              "damage": 1124,
+              "assists": 4,
+              "knockdowns": 5,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "17m 18s"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 406,
+              "assists": 1,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "13m 12s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "3m 50s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "XYGM",
+      "total": {
+        "points": 29,
+        "placement": 4,
+        "kills": 11
+      },
+      "matches": {
+        "match1": {
+          "points": 6,
+          "placement": 6,
+          "kills": 3
+        },
+        "match2": {
+          "points": 2,
+          "placement": 14,
+          "kills": 1
+        },
+        "match3": {
+          "points": 14,
+          "placement": 2,
+          "kills": 5
+        },
+        "match4": {
+          "points": 7,
+          "placement": 4,
+          "kills": 2
+        }
+      },
+      "players": [
+        {
+          "player_id": "E_0n1y",
+          "total": {
+            "kills": 6,
+            "damage": 3190,
+            "assists": 4,
+            "knockdowns": 8,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "12m 46s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 1247,
+              "assists": 0,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 09s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 462,
+              "assists": 1,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 44s"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 1252,
+              "assists": 2,
+              "knockdowns": 4,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "19m 49s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 229,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "10m 22s"
+            }
+          }
+        },
+        {
+          "player_id": "[VKG 2.0]NONAME",
+          "total": {
+            "kills": 5,
+            "damage": 1619,
+            "assists": 4,
+            "knockdowns": 6,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "12m 20s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 306,
+              "assists": 2,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "12m 25s"
+            },
+            "match2": {
+              "kills": 1,
+              "damage": 356,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 45s"
+            },
+            "match3": {
+              "kills": 2,
+              "damage": 786,
+              "assists": 2,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "19m 49s"
+            },
+            "match4": {
+              "kills": 2,
+              "damage": 171,
+              "assists": 0,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "10m 22s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "DDDD",
+      "total": {
+        "points": 26,
+        "placement": 5,
+        "kills": 11
+      },
+      "matches": {
+        "match1": {
+          "points": 3,
+          "placement": 14,
+          "kills": 2
+        },
+        "match2": {
+          "points": 2,
+          "placement": 9,
+          "kills": 0
+        },
+        "match3": {
+          "points": 0,
+          "placement": 19,
+          "kills": 0
+        },
+        "match4": {
+          "points": 21,
+          "placement": 1,
+          "kills": 9
+        }
+      },
+      "players": [
+        {
+          "player_id": "DDDD_蔡成蛆",
+          "total": {
+            "kills": 9,
+            "damage": 2691,
+            "assists": 1,
+            "knockdowns": 10,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "8m 17s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 1,
+              "damage": 737,
+              "assists": 0,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 44s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 158,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "11m 16s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 132,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "1m 49s"
+            },
+            "match4": {
+              "kills": 8,
+              "damage": 1664,
+              "assists": 1,
+              "knockdowns": 8,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 18s"
+            }
+          }
+        },
+        {
+          "player_id": "巅峰时期曾险胜蜘蛛",
+          "total": {
+            "kills": 2,
+            "damage": 941,
+            "assists": 6,
+            "knockdowns": 3,
+            "revives": 0,
+            "respawns": 1,
+            "avg_survival": "10m 26s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 1,
+              "damage": 405,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 44s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 98,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "11m 15s"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": 1,
+              "damage": 438,
+              "assists": 6,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 18s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "WTD",
+      "total": {
+        "points": 26,
+        "placement": 6,
+        "kills": 12
+      },
+      "matches": {
+        "match1": {
+          "points": 18,
+          "placement": 2,
+          "kills": 9
+        },
+        "match2": {
+          "points": 1,
+          "placement": 15,
+          "kills": 0
+        },
+        "match3": {
+          "points": 4,
+          "placement": 6,
+          "kills": 1
+        },
+        "match4": {
+          "points": 3,
+          "placement": 15,
+          "kills": 2
+        }
+      },
+      "players": [
+        {
+          "player_id": "WTD_Boring",
+          "total": {
+            "kills": 6,
+            "damage": 2618,
+            "assists": 5,
+            "knockdowns": 6,
+            "revives": 1,
+            "respawns": 1,
+            "avg_survival": "10m 55s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 4,
+              "damage": 1471,
+              "assists": 4,
+              "knockdowns": 4,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "17m 02s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 74,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "6m 19s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 668,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "16m 05s"
+            },
+            "match4": {
+              "kills": 2,
+              "damage": 405,
+              "assists": 0,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 15s"
+            }
+          }
+        },
+        {
+          "player_id": "WTD_YDq1ezi",
+          "total": {
+            "kills": 6,
+            "damage": 1871,
+            "assists": 4,
+            "knockdowns": 6,
+            "revives": 2,
+            "respawns": 0,
+            "avg_survival": "10m 57s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 5,
+              "damage": 1409,
+              "assists": 3,
+              "knockdowns": 5,
+              "revives": 2,
+              "respawns": 0,
+              "avg_survival": "17m 15s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 178,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 11s"
+            },
+            "match3": {
+              "kills": 1,
+              "damage": 275,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "16m 06s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 9,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 15s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "NONAME",
+      "total": {
+        "points": 22,
+        "placement": 7,
+        "kills": 9
+      },
+      "matches": {
+        "match1": {
+          "points": 17,
+          "placement": 1,
+          "kills": 5
+        },
+        "match2": {
+          "points": 0,
+          "placement": 18,
+          "kills": 0
+        },
+        "match3": {
+          "points": 5,
+          "placement": 14,
+          "kills": 4
+        },
+        "match4": {
+          "points": 0,
+          "placement": "/",
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "ATzz7",
+          "total": {
+            "kills": 5,
+            "damage": 2078,
+            "assists": 2,
+            "knockdowns": 5,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "9m 21s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 1489,
+              "assists": 1,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "17m 16s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 231,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 40s"
+            },
+            "match3": {
+              "kills": 2,
+              "damage": 358,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "6m 07s"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        },
+        {
+          "player_id": "middle23",
+          "total": {
+            "kills": 4,
+            "damage": 2164,
+            "assists": 2,
+            "knockdowns": 5,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "9m 21s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 2,
+              "damage": 1332,
+              "assists": 0,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "17m 16s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 162,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 40s"
+            },
+            "match3": {
+              "kills": 2,
+              "damage": 670,
+              "assists": 2,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 07s"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "SKD",
+      "total": {
+        "points": 21,
+        "placement": 8,
+        "kills": 1
+      },
+      "matches": {
+        "match1": {
+          "points": 4,
+          "placement": 5,
+          "kills": 0
+        },
+        "match2": {
+          "points": 13,
+          "placement": 2,
+          "kills": 1
+        },
+        "match3": {
+          "points": 2,
+          "placement": 10,
+          "kills": 0
+        },
+        "match4": {
+          "points": 2,
+          "placement": 8,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "SK-双蛋油漆工",
+          "total": {
+            "kills": 0,
+            "damage": 1307,
+            "assists": 0,
+            "knockdowns": 1,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "13m 27s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 338,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "15m 02s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 735,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "17m 18s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 68,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "13m 03s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 166,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "8m 25s"
+            }
+          }
+        },
+        {
+          "player_id": "SK—汉堡美食家",
+          "total": {
+            "kills": 1,
+            "damage": 646,
+            "assists": 0,
+            "knockdowns": 1,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "13m 26s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 84,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 57s"
+            },
+            "match2": {
+              "kills": 1,
+              "damage": 504,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "17m 18s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 33,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "13m 03s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 25,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "8m 25s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "TG",
+      "total": {
+        "points": 19,
+        "placement": 9,
+        "kills": 8
+      },
+      "matches": {
+        "match1": {
+          "points": 10,
+          "placement": 3,
+          "kills": 3
+        },
+        "match2": {
+          "points": 7,
+          "placement": 8,
+          "kills": 5
+        },
+        "match3": {
+          "points": 1,
+          "placement": 15,
+          "kills": 0
+        },
+        "match4": {
+          "points": 1,
+          "placement": 14,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "TG-Forgotten_o?",
+          "total": {
+            "kills": 2,
+            "damage": 1587,
+            "assists": 4,
+            "knockdowns": 2,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "9m 24s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 575,
+              "assists": 3,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "16m 07s"
+            },
+            "match2": {
+              "kills": 2,
+              "damage": 665,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "11m 50s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 271,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 13s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 76,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 27s"
+            }
+          }
+        },
+        {
+          "player_id": "TG_我觉得一般",
+          "total": {
+            "kills": 6,
+            "damage": 3547,
+            "assists": 1,
+            "knockdowns": 8,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "9m 24s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 3,
+              "damage": 2284,
+              "assists": 0,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "16m 07s"
+            },
+            "match2": {
+              "kills": 3,
+              "damage": 990,
+              "assists": 1,
+              "knockdowns": 4,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "11m 50s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 213,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 13s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 60,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 27s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "HWP",
+      "total": {
+        "points": 18,
+        "placement": 10,
+        "kills": 8
+      },
+      "matches": {
+        "match1": {
+          "points": 4,
+          "placement": 10,
+          "kills": 2
+        },
+        "match2": {
+          "points": 0,
+          "placement": 17,
+          "kills": 0
+        },
+        "match3": {
+          "points": 13,
+          "placement": 3,
+          "kills": 6
+        },
+        "match4": {
+          "points": 1,
+          "placement": 11,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "Aaa荔枝公主",
+          "total": {
+            "kills": 4,
+            "damage": 2098,
+            "assists": 3,
+            "knockdowns": 6,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "9m 18s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 1,
+              "damage": 254,
+              "assists": 1,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "7m 29s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 122,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 41s"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 1706,
+              "assists": 2,
+              "knockdowns": 4,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "19m 11s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 16,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 49s"
+            }
+          }
+        },
+        {
+          "player_id": "HWP_lw",
+          "total": {
+            "kills": 4,
+            "damage": 2385,
+            "assists": 2,
+            "knockdowns": 4,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "8m 57s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 1,
+              "damage": 340,
+              "assists": 1,
+              "knockdowns": 1,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "6m 01s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 127,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 46s"
+            },
+            "match3": {
+              "kills": 3,
+              "damage": 1767,
+              "assists": 1,
+              "knockdowns": 3,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "19m 11s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 151,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 49s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "JH",
+      "total": {
+        "points": 14,
+        "placement": 11,
+        "kills": 7
+      },
+      "matches": {
+        "match1": {
+          "points": 2,
+          "placement": 18,
+          "kills": 2
+        },
+        "match2": {
+          "points": 0,
+          "placement": 16,
+          "kills": 0
+        },
+        "match3": {
+          "points": 8,
+          "placement": 5,
+          "kills": 4
+        },
+        "match4": {
+          "points": 4,
+          "placement": 7,
+          "kills": 1
+        }
+      },
+      "players": [
+        {
+          "player_id": "CCAT_wa1te",
+          "total": {
+            "kills": 2,
+            "damage": 1710,
+            "assists": 4,
+            "knockdowns": 3,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "8m 10s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 2,
+              "damage": 325,
+              "assists": 0,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 32s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 371,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 04s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 426,
+              "assists": 3,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "15m 55s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 588,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "9m 07s"
+            }
+          }
+        },
+        {
+          "player_id": "PraJna",
+          "total": {
+            "kills": 5,
+            "damage": 1536,
+            "assists": 1,
+            "knockdowns": 5,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "8m 11s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 244,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 31s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 233,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 56s"
+            },
+            "match3": {
+              "kills": 4,
+              "damage": 908,
+              "assists": 0,
+              "knockdowns": 4,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "16m 10s"
+            },
+            "match4": {
+              "kills": 1,
+              "damage": 151,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "9m 08s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "NLT",
+      "total": {
+        "points": 12,
+        "placement": 12,
+        "kills": 4
+      },
+      "matches": {
+        "match1": {
+          "points": 3,
+          "placement": 7,
+          "kills": 0
+        },
+        "match2": {
+          "points": 0,
+          "placement": 20,
+          "kills": 0
+        },
+        "match3": {
+          "points": 1,
+          "placement": 11,
+          "kills": 0
+        },
+        "match4": {
+          "points": 8,
+          "placement": 5,
+          "kills": 4
+        }
+      },
+      "players": [
+        {
+          "player_id": "NAKIIKO",
+          "total": {
+            "kills": 4,
+            "damage": 3533,
+            "assists": 0,
+            "knockdowns": 4,
+            "revives": 1,
+            "respawns": 1,
+            "avg_survival": "8m 55s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 409,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "13m 22s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "1m 43s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 1451,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "10m 14s"
+            },
+            "match4": {
+              "kills": 4,
+              "damage": 1673,
+              "assists": 0,
+              "knockdowns": 4,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "10m 20s"
+            }
+          }
+        },
+        {
+          "player_id": "【NLT】你的性感娇妻",
+          "total": {
+            "kills": 0,
+            "damage": 1256,
+            "assists": 1,
+            "knockdowns": 0,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "9m 04s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 202,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "13m 22s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 110,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 19s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 573,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "10m 14s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 371,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "10m 20s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "XTQJ",
+      "total": {
+        "points": 10,
+        "placement": 13,
+        "kills": 1
+      },
+      "matches": {
+        "match1": {
+          "points": 6,
+          "placement": 4,
+          "kills": 1
+        },
+        "match2": {
+          "points": 1,
+          "placement": 13,
+          "kills": 0
+        },
+        "match3": {
+          "points": 2,
+          "placement": 8,
+          "kills": 0
+        },
+        "match4": {
+          "points": 1,
+          "placement": 12,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "唐僧的经页",
+          "total": {
+            "kills": 0,
+            "damage": 1679,
+            "assists": 1,
+            "knockdowns": 1,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "10m 37s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 511,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "15m 05s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 296,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "7m 19s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 872,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 38s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 26s"
+            }
+          }
+        },
+        {
+          "player_id": "沙僧的挑担",
+          "total": {
+            "kills": 1,
+            "damage": 1276,
+            "assists": 0,
+            "knockdowns": 2,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "10m 32s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 1,
+              "damage": 578,
+              "assists": 0,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "15m 05s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 130,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "7m 19s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 568,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 38s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 05s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "CLS",
+      "total": {
+        "points": 10,
+        "placement": 14,
+        "kills": 0
+      },
+      "matches": {
+        "match1": {
+          "points": 1,
+          "placement": 11,
+          "kills": 0
+        },
+        "match2": {
+          "points": 2,
+          "placement": 10,
+          "kills": 0
+        },
+        "match3": {
+          "points": 5,
+          "placement": 4,
+          "kills": 0
+        },
+        "match4": {
+          "points": 2,
+          "placement": 10,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "CLS_糖宝的娘亲花千骨",
+          "total": {
+            "kills": 0,
+            "damage": 1411,
+            "assists": 0,
+            "knockdowns": 1,
+            "revives": 0,
+            "respawns": 1,
+            "avg_survival": "10m 28s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 505,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "7m 01s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 236,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "11m 13s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 428,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "17m 38s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 242,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "6m 02s"
+            }
+          }
+        },
+        {
+          "player_id": "CLS_长留第一美男白子画",
+          "total": {
+            "kills": 0,
+            "damage": 728,
+            "assists": 0,
+            "knockdowns": 0,
+            "revives": 2,
+            "respawns": 0,
+            "avg_survival": "10m 25s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 108,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "7m 01s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 240,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "11m 13s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 290,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "17m 38s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 90,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 49s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "MNN",
+      "total": {
+        "points": 10,
+        "placement": 15,
+        "kills": 0
+      },
+      "matches": {
+        "match1": {
+          "points": 2,
+          "placement": 9,
+          "kills": 0
+        },
+        "match2": {
+          "points": 4,
+          "placement": 5,
+          "kills": 0
+        },
+        "match3": {
+          "points": 3,
+          "placement": 7,
+          "kills": 0
+        },
+        "match4": {
+          "points": 1,
+          "placement": 13,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "Tsuki",
+          "total": {
+            "kills": 0,
+            "damage": 161,
+            "assists": 0,
+            "knockdowns": 0,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "10m 59s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 50,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "10m 20s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 51,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 06s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 60,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 55s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 34s"
+            }
+          }
+        },
+        {
+          "player_id": "来自雾都的花花不简单呐",
+          "total": {
+            "kills": 0,
+            "damage": 1375,
+            "assists": 0,
+            "knockdowns": 0,
+            "revives": 1,
+            "respawns": 1,
+            "avg_survival": "11m 10s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 98,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 1,
+              "avg_survival": "10m 20s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 574,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "14m 06s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 703,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "14m 56s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 17s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "AIW",
+      "total": {
+        "points": 9,
+        "placement": 16,
+        "kills": 6
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 19,
+          "kills": 0
+        },
+        "match2": {
+          "points": 9,
+          "placement": 6,
+          "kills": 6
+        },
+        "match3": {
+          "points": 0,
+          "placement": "/",
+          "kills": 0
+        },
+        "match4": {
+          "points": 0,
+          "placement": "/",
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "AIW_Annie",
+          "total": {
+            "kills": 4,
+            "damage": 1474,
+            "assists": 2,
+            "knockdowns": 4,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "8m 02s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 100,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 19s"
+            },
+            "match2": {
+              "kills": 4,
+              "damage": 1374,
+              "assists": 2,
+              "knockdowns": 4,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "13m 46s"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        },
+        {
+          "player_id": "AIW_Tibbers",
+          "total": {
+            "kills": 2,
+            "damage": 1524,
+            "assists": 3,
+            "knockdowns": 3,
+            "revives": 1,
+            "respawns": 0,
+            "avg_survival": "8m 03s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 112,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 20s"
+            },
+            "match2": {
+              "kills": 2,
+              "damage": 1412,
+              "assists": 3,
+              "knockdowns": 3,
+              "revives": 1,
+              "respawns": 0,
+              "avg_survival": "13m 46s"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "MB",
+      "total": {
+        "points": 6,
+        "placement": 17,
+        "kills": 0
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 20,
+          "kills": 0
+        },
+        "match2": {
+          "points": 3,
+          "placement": 7,
+          "kills": 0
+        },
+        "match3": {
+          "points": 0,
+          "placement": 17,
+          "kills": 0
+        },
+        "match4": {
+          "points": 3,
+          "placement": 6,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "Yagaame",
+          "total": {
+            "kills": 0,
+            "damage": 678,
+            "assists": 0,
+            "knockdowns": 1,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "6m 24s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 60,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 08s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 342,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "11m 51s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 186,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 23s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 90,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "9m 16s"
+            }
+          }
+        },
+        {
+          "player_id": "ihatetheworld",
+          "total": {
+            "kills": 0,
+            "damage": 739,
+            "assists": 0,
+            "knockdowns": 0,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "6m 22s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 141,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 08s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 473,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "11m 51s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 18,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 24s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 107,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "9m 05s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "DYJC",
+      "total": {
+        "points": 4,
+        "placement": 18,
+        "kills": 2
+      },
+      "matches": {
+        "match1": {
+          "points": 2,
+          "placement": 16,
+          "kills": 2
+        },
+        "match2": {
+          "points": 1,
+          "placement": 11,
+          "kills": 0
+        },
+        "match3": {
+          "points": 1,
+          "placement": 13,
+          "kills": 0
+        },
+        "match4": {
+          "points": 0,
+          "placement": "/",
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "[DYJC] EM",
+          "total": {
+            "kills": 0,
+            "damage": 539,
+            "assists": 1,
+            "knockdowns": 0,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "6m 33s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 99,
+              "assists": 1,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 02s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 250,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "9m 18s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 190,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 20s"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        },
+        {
+          "player_id": "[DYJC]xxxyttt",
+          "total": {
+            "kills": 2,
+            "damage": 799,
+            "assists": 0,
+            "knockdowns": 3,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "6m 34s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 2,
+              "damage": 326,
+              "assists": 0,
+              "knockdowns": 2,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 02s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 382,
+              "assists": 0,
+              "knockdowns": 1,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "9m 19s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 91,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 21s"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "WWD",
+      "total": {
+        "points": 4,
+        "placement": 19,
+        "kills": 0
+      },
+      "matches": {
+        "match1": {
+          "points": 1,
+          "placement": 13,
+          "kills": 0
+        },
+        "match2": {
+          "points": 1,
+          "placement": 12,
+          "kills": 0
+        },
+        "match3": {
+          "points": 0,
+          "placement": 16,
+          "kills": 0
+        },
+        "match4": {
+          "points": 2,
+          "placement": 9,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "[WWD]汪汪队",
+          "total": {
+            "kills": 0,
+            "damage": 67,
+            "assists": 0,
+            "knockdowns": 0,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "5m 34s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 09s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "7m 09s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 28s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 67,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 32s"
+            }
+          }
+        },
+        {
+          "player_id": "[WWD]立大功",
+          "total": {
+            "kills": 0,
+            "damage": 76,
+            "assists": 0,
+            "knockdowns": 0,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "5m 36s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 20,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "6m 31s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "8m 20s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 35,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 30s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 21,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "5m 01s"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "BSR",
+      "total": {
+        "points": 1,
+        "placement": 20,
+        "kills": 0
+      },
+      "matches": {
+        "match1": {
+          "points": 1,
+          "placement": 15,
+          "kills": 0
+        },
+        "match2": {
+          "points": 0,
+          "placement": 19,
+          "kills": 0
+        },
+        "match3": {
+          "points": 0,
+          "placement": 18,
+          "kills": 0
+        },
+        "match4": {
+          "points": 0,
+          "placement": 17,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "nono",
+          "total": {
+            "kills": 0,
+            "damage": 249,
+            "assists": 0,
+            "knockdowns": 0,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "3m 18s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 171,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 35s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 54,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 21s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 24,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 19s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 0,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "1m 59s"
+            }
+          }
+        },
+        {
+          "player_id": "因为游戏打的差被老婆",
+          "total": {
+            "kills": 0,
+            "damage": 627,
+            "assists": 0,
+            "knockdowns": 0,
+            "revives": 0,
+            "respawns": 0,
+            "avg_survival": "3m 18s"
+          },
+          "matches": {
+            "match1": {
+              "kills": 0,
+              "damage": 110,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 35s"
+            },
+            "match2": {
+              "kills": 0,
+              "damage": 210,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "4m 21s"
+            },
+            "match3": {
+              "kills": 0,
+              "damage": 86,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "2m 19s"
+            },
+            "match4": {
+              "kills": 0,
+              "damage": 221,
+              "assists": 0,
+              "knockdowns": 0,
+              "revives": 0,
+              "respawns": 0,
+              "avg_survival": "1m 58s"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
