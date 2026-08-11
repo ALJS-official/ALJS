@@ -115,6 +115,14 @@
     .team-card:hover {
       background: #1f1f1f;
     }
+    .team-card.withdrawn {
+      opacity: 0.35;
+      filter: grayscale(1);
+    }
+
+    .team-card.withdrawn:hover {
+      background: #161616;
+    }
     .team-header {
       display: flex;
       align-items: center;
@@ -289,6 +297,15 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
+    .withdrawn-label {
+      font-family: 'Eurostile LT', sans-serif;
+      font-size: 0.75rem;
+      font-weight: normal;
+      color: #777;
+      letter-spacing: 0.12em;
+      margin-left: 10px;
+      transform: none;
+    }
   </style>
 </head>
 <body>
@@ -368,10 +385,22 @@
           return;
         }
         const sortedTeams = [...data.teams].sort((a, b) => {
-          const aData = metricFor(a, tab), bData = metricFor(b, tab);
+          const aData = metricFor(a, tab);
+          const bData = metricFor(b, tab);
+
+          // Group Standings 中退赛队伍强制放最后
+          if (tab === 'total') {
+            const aWithdrawn = a.status === 'withdrawn';
+            const bWithdrawn = b.status === 'withdrawn';
+
+            if (aWithdrawn !== bWithdrawn) {
+              return aWithdrawn ? 1 : -1;
+            }
+          }
+
           return (Number(bData.points) || 0) - (Number(aData.points) || 0)
-            || (Number(bData.kills) || 0) - (Number(aData.kills) || 0)
-            || (Number(aData.placement) || 999) - (Number(bData.placement) || 999);
+                  || (Number(bData.kills) || 0) - (Number(aData.kills) || 0)
+                  || (Number(aData.placement) || 999) - (Number(bData.placement) || 999);
         });
 
         container.innerHTML = sortedTeams.map((team, index) => {
@@ -383,11 +412,14 @@
             : (teamData.placement ?? '/');
           const players = Array.isArray(team.players) ? team.players : [];
           return `
-            <div class="team-card">
+            <div class="team-card ${team.status === 'withdrawn' ? 'withdrawn' : ''}">
               <div class="team-header" role="button" tabindex="0" aria-expanded="false">
                 <div class="team-info">
                   <div class="team-logo">#${index + 1}</div>
-                  <div class="team-name">${formatTeamName(team.team_id)}</div>
+                  <div class="team-name">
+                    ${formatTeamName(team.team_id)}
+                    ${team.status === 'withdrawn' ? '<span class="withdrawn-label">WITHDRAWN</span>' : ''}
+                  </div>
                 </div>
                 <div class="team-stats">
                   <div class="stat-item">

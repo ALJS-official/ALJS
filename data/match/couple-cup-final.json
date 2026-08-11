@@ -795,6 +795,7 @@
     },
     {
       "team_id": "NONAME",
+      "status": "withdrawn",
       "total": {
         "points": 22,
         "placement": 7,
@@ -1983,6 +1984,7 @@
     },
     {
       "team_id": "AIW",
+      "status": "withdrawn",
       "total": {
         "points": 9,
         "placement": 16,
